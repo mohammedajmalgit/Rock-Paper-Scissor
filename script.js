@@ -1,29 +1,29 @@
 // alert("Hi")
 //Challenge 1: Your Age In Days
 
-function ageInDays() {
-    var birthYear = prompt("What year you were born")
-    var today = new Date().getFullYear()
-    var result = (today-birthYear)*365;
-    var h1 = document.createElement("h1")
-    var textAnswer = document.createTextNode("You are " + result + " days old.")
-    h1.setAttribute('id', 'ageInDays')
-    h1.appendChild(textAnswer)
-    document.getElementById("flex-box-result").appendChild(h1)
-}
+// function ageInDays() {
+//     var birthYear = prompt("What year you were born")
+//     var today = new Date().getFullYear()
+//     var result = (today-birthYear)*365;
+//     var h1 = document.createElement("h1")
+//     var textAnswer = document.createTextNode("You are " + result + " days old.")
+//     h1.setAttribute('id', 'ageInDays')
+//     h1.appendChild(textAnswer)
+//     document.getElementById("flex-box-result").appendChild(h1)
+// }
 
-function reset(){
-    document.getElementById('ageInDays').remove() 
-}
+// function reset(){
+//     document.getElementById('ageInDays').remove() 
+// }
 
 //Generate Cat
 
-function generateCat(){
-    var img = document.createElement('img')
-    var div = document.getElementById('generate-Cat')
-    img.src = 'https://thecatapi.com/api/images/get?format=src&type=gif&size=small'
-    div.appendChild(img)
-}
+// function generateCat(){
+//     var img = document.createElement('img')
+//     var div = document.getElementById('generate-Cat')
+//     img.src = 'https://thecatapi.com/api/images/get?format=src&type=gif&size=small'
+//     div.appendChild(img)
+// }
 
 //Rock Paper Scissor
 
@@ -90,48 +90,48 @@ function rpsFrontEnd(humanImageChoice, computerImageChoice, finalMessage){
 
 //Challenge 4: Change Button Color
 
-var allButtons = document.getElementsByTagName('button')
-var copyAllButtons = [];
-for(let i = 0; i < allButtons.length; i++){
-    copyAllButtons.push(allButtons[i].classList[1])
-}
+// var allButtons = document.getElementsByTagName('button')
+// var copyAllButtons = [];
+// for(let i = 0; i < allButtons.length; i++){
+//     copyAllButtons.push(allButtons[i].classList[1])
+// }
 
-function buttonColorChange(color){
-    if(color.value==='red'){
-        buttonsRed()
-    }else if(color.value === 'green'){
-        buttonsGreen()
-    }else if(color.value === 'random'){
-        buttonsRandom()
-    }else if(color.value === 'reset'){
-        buttonsReset()
-    }
-}
+// function buttonColorChange(color){
+//     if(color.value==='red'){
+//         buttonsRed()
+//     }else if(color.value === 'green'){
+//         buttonsGreen()
+//     }else if(color.value === 'random'){
+//         buttonsRandom()
+//     }else if(color.value === 'reset'){
+//         buttonsReset()
+//     }
+// }
 
-function buttonsRed(){
-    for(let i=0;i<allButtons.length;i++){
-        allButtons[i].classList.remove(allButtons[i].classList[1]);
-        allButtons[i].classList.add('btn-danger')
-    }
-}
+// function buttonsRed(){
+//     for(let i=0;i<allButtons.length;i++){
+//         allButtons[i].classList.remove(allButtons[i].classList[1]);
+//         allButtons[i].classList.add('btn-danger')
+//     }
+// }
 
-function buttonsGreen(){
-    for(let i=0;i<allButtons.length;i++){
-        allButtons[i].classList.remove(allButtons[i].classList[1])
-        allButtons[i].classList.add('btn-success')
-    }
-}
+// function buttonsGreen(){
+//     for(let i=0;i<allButtons.length;i++){
+//         allButtons[i].classList.remove(allButtons[i].classList[1])
+//         allButtons[i].classList.add('btn-success')
+//     }
+// }
 
-function buttonsReset(){
-    for(let i=0;i<allButtons.length;i++){
-        allButtons[i].classList.remove(allButtons[i].classList[1])
-        allButtons[i].classList.add(copyAllButtons[i])
-    }
-}
+// function buttonsReset(){
+//     for(let i=0;i<allButtons.length;i++){
+//         allButtons[i].classList.remove(allButtons[i].classList[1])
+//         allButtons[i].classList.add(copyAllButtons[i])
+//     }
+// }
 
-function buttonsRandom(){
-    for(let i=0;i<allButtons.length;i++){
-        allButtons[i].classList.remove(allButtons[i].classList[1])
-        allButtons[i].classList.add(copyAllButtons[Math.floor(Math.random()*7)])
-    }
-}
+// function buttonsRandom(){
+//     for(let i=0;i<allButtons.length;i++){
+//         allButtons[i].classList.remove(allButtons[i].classList[1])
+//         allButtons[i].classList.add(copyAllButtons[Math.floor(Math.random()*7)])
+//     }
+// }
